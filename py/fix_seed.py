@@ -1,11 +1,12 @@
 import os
 import random
+
 import numpy as np
 import torch
 
 
 # PyTroch
-def seed_everything(seed=42):
+def fix_seeds(seed: int = 42):
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
     np.random.seed(seed)
