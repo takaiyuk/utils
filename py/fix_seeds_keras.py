@@ -1,4 +1,3 @@
-# Keras
 def fix_seeds(seed: int = 42) -> None:
     """
     https://keras.io/getting_started/faq/#how-can-i-obtain-reproducible-results-using-keras-during-development
