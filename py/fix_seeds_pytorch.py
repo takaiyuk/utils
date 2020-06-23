@@ -5,7 +5,6 @@ import numpy as np
 import torch
 
 
-# PyTroch
 def fix_seeds(seed: int = 42):
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
