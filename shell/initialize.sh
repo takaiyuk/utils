@@ -1,5 +1,11 @@
 #!/bin/bash
 
+function checkdir () {
+    if [ $(ls -1 | wc -l) -ne 1 ]; then
+        exit 1
+    fi
+}
+
 function makedirs () {
     mkdir -p data/external
     mkdir -p data/interim
@@ -88,6 +94,7 @@ function git_init () {
     git init
 }
 
+checkdir
 makedirs
 touch_keep
 touch_init
