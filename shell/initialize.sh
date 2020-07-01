@@ -90,6 +90,17 @@ function touch_init () {
     touch run.sh
 }
 
+function chmod_shell () {
+    chmod +x ./docker/exec.sh
+    chmod +x ./docker/pull.sh
+    chmod +x ./docker/run.sh
+
+    chmod +x ./run.sh
+
+    chmod +x ./shell/download.sh
+    chmod +x ./shell/submit.sh
+}
+
 function git_init () {
     git init
 }
@@ -98,5 +109,5 @@ checkdir
 makedirs
 touch_keep
 touch_init
+chmod_shell
 git_init
-
