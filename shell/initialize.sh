@@ -86,6 +86,7 @@ function touch_init () {
     touch src/const.py
     touch .gitignore
     touch config.yml
+    touch main.py
     touch README.md
     touch run.sh
 }
