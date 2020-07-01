@@ -19,8 +19,8 @@ def timer(name: str, logger: logging.Logger = None) -> None:
             modeling()
     """
     t0 = time.time()
-    message = f"[{name}] done in {time.time() - t0:.1f} s"
     yield
+    message = f"[{name}] done in {time.time() - t0:.1f} s"
     if logger is not None:
         logger.info(message)
     else:
