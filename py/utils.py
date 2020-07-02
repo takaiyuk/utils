@@ -5,6 +5,7 @@ from typing import Any
 
 import hydra
 import joblib
+import numpy as np
 import yaml
 
 
@@ -62,3 +63,9 @@ def execute_shell(cmd: str) -> None:
 
 def mkdir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
+
+
+def log_trans(x: np.array, inverse: bool = False) -> np.array:
+    if inverse:
+        return np.expm1(x)
+    return np.log1p(x)
