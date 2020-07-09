@@ -16,10 +16,13 @@ function makedirs () {
 
     mkdir -p docs
 
-    mkdir -p models/adversarial
-    mkdir -p models/efficientdet
+    mkdir -p experiments
+
     mkdir -p models/importance
     mkdir -p models/model
+    mkdir -p models/optuna
+    mkdir -p models/prediction
+    mkdir -p models/pretrained
 
     mkdir -p notebooks
 
@@ -30,8 +33,6 @@ function makedirs () {
     mkdir -p src/data
     mkdir -p src/features
     mkdir -p src/models
-    mkdir -p src/visualization
-    mkdir -p src/submit
     mkdir -p src/utils
 
     mkdir -p submissions
@@ -47,10 +48,13 @@ function touch_keep () {
 
     touch docs/.gitkeep
 
-    touch models/adversarial/.gitkeep
-    touch models/efficientdet/.gitkeep
+    touch experiments/.gitkeep
+
     touch models/importance/.gitkeep
     touch models/model/.gitkeep
+    touch models/optuna/.gitkeep
+    touch models/prediction/.gitkeep
+    touch models/pretrained/.gitkeep
 
     touch notebooks/.gitkeep
 
@@ -61,8 +65,6 @@ function touch_keep () {
     touch src/data/.gitkeep
     touch src/features/.gitkeep
     touch src/models/.gitkeep
-    touch src/visualization/.gitkeep
-    touch src/submit/.gitkeep
     touch src/utils/.gitkeep
 
     touch submissions/.gitkeep
@@ -73,20 +75,18 @@ function touch_init () {
     touch src/data/__init__.py
     touch src/features/__init__.py
     touch src/models/__init__.py
-    touch src/visualization/__init__.py
-    touch src/submit/__init__.py
     touch src/utils/__init__.py
 
     touch docker/pull.sh
     touch docker/run.sh
     touch docker/exec.sh
     touch docs/competition.md
+    touch experiments/fe000.yml
+    touch experiments/run000.yml
     touch shell/download.sh
     touch shell/submit.sh
     touch src/const.py
     touch .gitignore
-    touch config.yml
-    touch main.py
     touch README.md
     touch run.sh
 }
