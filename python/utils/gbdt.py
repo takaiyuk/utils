@@ -8,8 +8,8 @@ import numpy as np
 import optuna.integration.lightgbm as optuna_lgb
 import pandas as pd
 
-from src.utils.file import mkdir
-from src.utils.joblib import Jbl
+from .file import mkdir
+from .joblib import Jbl
 
 
 class BaseModel(metaclass=ABCMeta):

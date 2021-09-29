@@ -4,7 +4,7 @@ import time
 from contextlib import contextmanager
 from typing import Generator, Union
 
-from src.utils.logger import Logger
+from .logger import Logger
 
 
 def time_since(since: time.time, percent: float) -> str:
