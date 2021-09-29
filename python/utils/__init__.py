@@ -1,5 +1,4 @@
 from .augmentations import CutMix, CutOut, MixUp
-from .config import print_cfg
 from .file import check_exist, mkdir, rmdir
 from .gbdt import LGBMModel, LGBMOptunaModel
 from .joblib import Jbl
@@ -27,7 +26,6 @@ __all__ = [
     "fix_seed",
     "get_default_logger",
     "mkdir",
-    "print_cfg",
     "read_env",
     "reduce_mem_usage",
     "rmdir",
